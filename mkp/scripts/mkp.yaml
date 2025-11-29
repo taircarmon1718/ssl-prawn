@@ -1,0 +1,29 @@
+# =====================================================================
+# MKP DATA CONFIGURATION FILE
+# ---------------------------------------------------------------------
+# This YAML file defines the dataset used for the Masked Keypoint
+# Prediction (MKP) self-supervised learning stage.
+#
+# In MKP training:
+#   • The MODEL sees *masked images* as input.
+#   • The LABELS remain the original YOLO keypoint annotations.
+#     (Even if a keypoint is masked visually, its true location is the
+#      supervision signal the model must reconstruct.)
+#
+# NOTE:
+#   This is NOT the dataset used for final prawn keypoint training.
+#   For downstream training, you will use the original (unmasked)
+#   data.yaml file again.
+# =====================================================================
+path: /Users/taircarmon/Desktop/ssl-prawn/mkp/scripts/mkp_data/prawn_2025_circ_small_v1
+
+# Masked image folders created by create_masked_images.py
+train: images/train_masked
+val: images/val_masked
+
+# Number of keypoints (4 keypoints × (x, y, visibility))
+kpt_shape: [4, 3]
+
+# Class names (single class: prawn)
+names:
+  0: prawn

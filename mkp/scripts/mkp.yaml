@@ -15,15 +15,21 @@
 #   For downstream training, you will use the original (unmasked)
 #   data.yaml file again.
 # =====================================================================
-path: /Users/taircarmon/Desktop/ssl-prawn/mkp/scripts/mkp_data/prawn_2025_circ_small_v1
+path: "C:/Users/carmonta/Desktop/ssl-prawn/mkp/scripts/mkp_data/prawn_2025_circ_small_v1"
 
-# Masked image folders created by create_masked_images.py
-train: images/train_masked
-val: images/val_masked
 
-# Number of keypoints (4 keypoints × (x, y, visibility))
+
+train:
+  images: images/train_masked
+  labels: labels/train
+
+val:
+  images: images/val_masked
+  labels: labels/val
+
+# Number of keypoints
 kpt_shape: [4, 3]
 
-# Class names (single class: prawn)
+# Class names
 names:
   0: prawn

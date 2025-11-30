@@ -1,0 +1,16 @@
+train: "C:/Users/carmonta/Desktop/Uni-Projects/prawn-size-project/datasets/prawn_2025_circ_small_v1/images/train"
+val: "C:/Users/carmonta/Desktop/Uni-Projects/prawn-size-project/datasets/prawn_2025_circ_small_v1/images/val"
+
+kpt_shape: [4, 3]
+flip_idx: [0, 1, 2, 3]
+
+nc: 1
+names: ['prawn-model']
+
+roboflow:
+  workspace: prawns
+  project: giant-freshwater-prawn-keypoint-detection-umvh3
+  version: 112
+  license: BY-NC-SA 4.0
+  url: "https://universe.roboflow.com/prawns/giant-freshwater-prawn-keypoint-detection-umvh3/dataset/112"
+XX

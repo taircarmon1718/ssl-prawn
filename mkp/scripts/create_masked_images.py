@@ -71,7 +71,7 @@ from tqdm import tqdm
 
 MASK_SIZE = 40
 MASK_TYPE = "black"
-DATASET_PATH = Path("/mkp/scripts/mkp_data/prawn_2025_circ_small_v1/")
+DATASET_PATH = Path("C:/Users/carmonta/Desktop/ssl-prawn/mkp/scripts/mkp_data/prawn_2025_circ_small_v1/")
 
 def apply_mask_one(image, keypoint, mask_size, mask_type):
     """Apply a single square mask centered on one keypoint (keypoint = (x_rel, y_rel, v))."""

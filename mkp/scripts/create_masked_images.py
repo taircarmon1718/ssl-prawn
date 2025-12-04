@@ -75,7 +75,7 @@ DATASET_PATH = Path("C:/Users/carmonta/Desktop/ssl-prawn/mkp/scripts/mkp_data/pr
 
 def apply_mask_one(image, keypoint, mask_size, mask_type):
     """Apply a single square mask centered on one keypoint (keypoint = (x_rel, y_rel, v))."""
-    h, w = image.shape[:2]
+    h, w = image.shtape[:2]
     x_rel, y_rel, _ = keypoint
     cx = int(x_rel * w)
     cy = int(y_rel * h)
